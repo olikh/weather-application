@@ -14,28 +14,70 @@
   <title>Weather App</title>
 </head>
 <body>
-  <a href="" class="btn btn-primary">Click me</a>
+  <div class="container">
+    <div class="main-info">
+  <div class="weather-top">
+    <div class="input-field">
+      <form class="example" action="">
+        <input type="text" placeholder="Type a city.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
     </div>
+    </div>
+    </form>
     <h1>
-      New York
+      Lviv
     </h1>
-    <ul>
-      <li>
-        Friday 05:00
-      </li>
-      <li>
-        Sunny
-      </li>
-    </ul>
-    <div class="row">
-      <div class="col-sm-6">
-        <img 
-        src="images/sunny.png" alt="Sunny"/>
+      <div class="weather-grids">
+        <h3 class="fri"> FRIDAY 6/20</h3>
+        <img src="images/sun.png" class="img-sun" alt="image description">
+      </div>
+      <div class="weather-grids weather-mdl">
+        <canvas id="clear-day" width="10" height="10"></canvas>
+      </div>
+      <div class="weather-grids">
+        <h4>Max 27°C</h4>
+        <h2>25°C</h2>
+        <h4>Min 20°C</h4>
+      </div>
+      <div class="clear"></div>
+      <div class="weather-bottom">
+        <ul>
+          <li>
+            <h4>SAT</h4>
+            <img src="images/sunny.png" class="cloud" alt="image description">
+            <h5>25°C</h5>
+          </li>
+          <li>
+            <h4>SUN</h4>
+            <img src="images/cloud.png" class="cloud" alt="image description">
+            <h5>25°C</h5>
+          </li>
+          <li>
+            <h4>MON</h4>
+            <img src="images/cloud.png" class="cloud" alt="image description">
+            <h5>25°C</h5>
+          </li>
+          <li>
+            <h4>TUE</h4>
+            <img src="images/cloud.png" class="cloud" alt="image description">
+            <h5>25°C</h5>
+          </li>
+          <li>
+            <h4>WED</h4>
+            <img src="images/sunny.png" class="cloud" alt="image description">
+            <h5>25°C</h5>
+          </li>
+          <li>
+            <h4>THU</h4>
+            <img src="images/sunny.png" class="cloud" alt="image description">
+            <h5>25°C</h5>
+          </li>
+        </ul>
       </div>
     </div>
-    
-
   </div>
+</div>
 <script src="src/app.js"></script>
 </body>
 

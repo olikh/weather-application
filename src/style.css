@@ -4,3 +4,114 @@ body {
     background-size: cover;
     font-family: sans-serif;
 }
+h1 {
+    font-weight: 500;
+    margin-top: 0.1em;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+form.example input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #D39CC2;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+.main-info {
+    width: 50%;
+    margin: 2em auto;
+    background: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    padding: 2em;
+    border-radius: 5px;
+}
+
+.weather-grids {
+    float: left;
+    width: 33%;
+    margin: 2em 0;
+}
+.weather-grids.weather-mdl {
+    text-align: center;
+}
+.weather-grids h2 {
+    font-size: 3em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: -45px;
+    left: 20px;
+}
+.weather-grids h3.fri {
+    font-weight: 500;
+    margin-top: 0.1em;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: -20px;
+    left: 5px;
+}
+.img-sun {
+    display: block;
+    margin: 0 auto;
+    height: 64px;
+    padding: 0 0 10px;
+    position: relative;
+    top: -90px;
+    left: 200px;
+}
+.weather-grids h4 {
+    font-size: 1em;
+    color: grey;
+    float: left;
+    position: relative;
+    font-weight: 200;
+    top: -57px;
+    left: 85px;
+}
+.clear {
+    clear: both;
+}
+.weather-bottom {
+    text-align: center;
+    margin-top: 1em;
+}
+.cloud {
+    display: block;
+    margin: 0 auto;
+    height: 64px;
+    padding: 0 0 10px;
+    position: relative;
+    top: -2px;
+    left: 3px;
+}
+.weather-bottom ul li {
+    display: inline-block;
+    padding: 1em 7;
+    width: 15%;
+    position: relative;
+    top: -70px;
+    left: -10px;
+}
