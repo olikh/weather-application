@@ -78,6 +78,13 @@ small {
     width: 33%;
     margin: 2em 0;
 }
+.weather-grids .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+.weather-grids .active:hover {
+    text-decoration: none;
+}
 .weather-grids.weather-mdl {
     text-align: center;
 }
@@ -87,7 +94,15 @@ small {
     color: rgb(0, 0, 0);
     position: relative;
     top: -45px;
-    left: 80px;
+    left: 30px;
+}
+.units {
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: -100px;
+    left: 90px;
 }
 .weather-grids h3.fri {
     font-size: 1em;
