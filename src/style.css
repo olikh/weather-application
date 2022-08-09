@@ -37,13 +37,15 @@ form.example button {
 }
 li {
     font-size: 0.9em;
-    text-transform: capitalize;
     display: inline-block;
     margin-top: 0.1em;
     color: rgb(0, 0, 0);
     position: relative;
     top: -20px;
     left: 5px;
+}
+li:first-letter {
+    text-transform: capitalize;
 }
 small {
     font-weight: 500;
@@ -84,7 +86,8 @@ small {
     left: 20px;
 }
 .weather-grids h3.fri {
-    font-weight: 500;
+    font-size: 1em;
+    font-weight:100;
     margin-top: 0.1em;
     color: rgb(0, 0, 0);
     position: relative;
