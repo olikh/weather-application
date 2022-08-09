@@ -56,8 +56,12 @@ small {
     top: -30px;
     left: 650px;
 }
-.descr {
-    text-align: right;
+.descr li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 4px;
+    left: -385px;
+    top: -20px;
 }
 .fa {
     display: inline-block;
@@ -105,8 +109,7 @@ small {
     left: 90px;
 }
 .weather-grids h3.fri {
-    font-size: 1em;
-    font-weight: 100;
+    font-size: 15px;
     margin-top: 0.1em;
     color: rgb(0, 0, 0);
     position: relative;
