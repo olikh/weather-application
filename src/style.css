@@ -57,6 +57,11 @@ small {
     top: -30px;
     left: 650px;
 }
+.weather-top .logo {
+    width: 40px;
+    max-width: 100px;
+    display: block;
+}
 .descr ul li {
     text-align: right;
     font-size: 13px;
