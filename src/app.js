@@ -9,21 +9,33 @@ function formatDate(timestamp) {
     if (minutes < 10) {
         minutes = `0${minutes}`;
     }
-    let days = [ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Suturday"];
+    let days = [ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = days[date.getDay()];
-return `${day} ${hours}:${minutes}`;
+    return `${day} ${hours}:${minutes}`;
 }
-function displayForecast() {
+
+function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = [ "Sun","Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[day];
+
+}
+
+function displayForecast(response) {
+    let forecast = response.data.daily;
+    
     let forecastElement = document.querySelector("#forecast");
-    let days = ["Thu", "Fri", "Sat", "Sun"];
 
     let forecastHTML = '<div class="row">';
-    days.forEach(function (day){
+    forecast.forEach(function (forecastDay, index){
+        if (index < 6)
         forecastHTML = 
         forecastHTML + 
         `<div class="col-2">
-            <div class="weather-date">${day}</div>
-                <img src="images/sunny.png" class="cloud" alt="">
+            <div class="weather-date">${formatDay(forecastDay.dt)}</div>
+                <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="">
             <div class="weather-forecast-temp">
                 <span class="weather-temperature">25°C</span>
         </div>
@@ -62,7 +74,7 @@ function displayTemperature(response){
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
     
-    getForecast(response.data.coord)
+    getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -105,5 +117,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Paris");
-displayForecast();
 
