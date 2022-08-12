@@ -17,23 +17,23 @@ form {
     margin-top: 0em;
 }
 form.example input[type="search"] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 107%;
-    background: #f1f1f1;
+    background: #f9f7fe;
+    border: none;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 6px;
+    color: rgba(39, 33, 66, .4);
+    font-size: 16px;
+    height: 50px;
+    line-height: 20px;
 }
 form.example input[type="submit"] {
-    float: left;
-    width: 106%;
-    padding: 14px;
-    background: #D39CC2;
-    color: white;
-    font-size: 18px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
+    background: rgb(252, 171, 115);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 0;
+    border: none;
+    height: 50px;
 }
 li {
     font-size: 0.9em;
@@ -51,7 +51,7 @@ li:first-letter {
 small {
     font-weight: 500;
     margin-top: 0.1em;
-    color: #D39CC2;
+    color: rgb(252, 171, 115);
     position: relative;
     top: -30px;
     left: 650px;
@@ -72,7 +72,7 @@ small {
 .main-info {
     width: 50%;
     margin: 2em auto;
-    background: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    background: radial-gradient(rgb(242, 240, 245) 26%, rgb(252, 171, 115) 100%);
     padding: 2em;
     border-radius: 5px;
 }
@@ -124,15 +124,6 @@ small {
     position: relative;
     top: -140px;
     left: 200px;
-}
-.weather-grids h4 {
-    font-size: 1em;
-    color: grey;
-    float: left;
-    position: relative;
-    font-weight: 200;
-    top: -68px;
-    left: 130px;
 }
 .clear {
     clear: both;
