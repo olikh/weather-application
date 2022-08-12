@@ -9,12 +9,12 @@ h1 {
     margin-top: 0.1em;
     color: rgb(0, 0, 0);
     position: relative;
-    top: 30px;
+    top: 55px;
     left: 5px;
 }
 form {
     display: block;
-    margin-top: 0em;
+    margin-top: 3em;
 }
 form.example input[type="search"] {
     background: #f9f7fe;
@@ -36,13 +36,14 @@ form.example input[type="submit"] {
     height: 50px;
 }
 li {
-    font-size: 0.9em;
+    font-size: 13px;
+    font-weight: 500;
     display: inline-block;
     margin-top: 0.1em;
     color: rgb(0, 0, 0);
     position: relative;
-    top: -35px;
-    left: 4px;
+    top: -15px;
+    left: 6px;
 }
 
 li:first-letter {
@@ -56,18 +57,12 @@ small {
     top: -30px;
     left: 650px;
 }
-.descr li {
-    display: inline-block;
-    font-size: 20px;
-    padding: 4px;
-    left: -385px;
-    top: -20px;
-}
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
+.descr ul li {
+    text-align: right;
+    font-size: 13px;
+    padding: 2px;
+    left: 80px;
+    top: -90px;
 }
 .main-info {
     width: 50%;
@@ -76,7 +71,6 @@ small {
     padding: 2em;
     border-radius: 5px;
 }
-
 .weather-grids {
     float: left;
     width: 33%;
@@ -93,60 +87,49 @@ small {
     text-align: center;
 }
 .weather-grids h2 {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 600;
     color: rgb(0, 0, 0);
     position: relative;
-    top: -59px;
-    left: 30px;
+    top: -40px;
+    left: 95px;
 }
 .units {
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 600;
     color: rgb(0, 0, 0);
     position: relative;
-    top: -115px;
-    left: 90px;
+    top: -120px;
+    left: 165px;
 }
 .weather-grids h3.fri {
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 0.1em;
     color: rgb(0, 0, 0);
     position: relative;
-    top: 30px;
-    left: 5px;
+    top: 35px;
+    left: 7px;
 }
 .img-sun {
     display: block;
     margin: 0 auto;
-    height: 100px;
+    height: 150px;
     padding: 0 0 10px;
     position: relative;
-    top: -140px;
+    top: -108px;
     left: 200px;
-}
-.clear {
-    clear: both;
 }
 .weather-bottom {
     text-align: center;
     margin-top: 1em;
 }
-.cloud {
-    display: block;
-    margin: 0 auto;
-    height: 64px;
-    padding: 0 0 10px;
-    position: relative;
-    top: -2px;
-    left: 3px;
-}
+
 .weather-bottom ul li {
     display: inline-block;
     padding: 1em 7;
     width: 15%;
     position: relative;
-    top: -70px;
+    top: -120px;
     left: -10px;
 }
 .weather-date {
@@ -155,4 +138,12 @@ small {
 }
 .weather-temperature {
     font-size: 13px;
+}
+.col-2 {
+    display: inline-block;
+    padding: 1em 7;
+    width: 15%;
+    position: relative;
+    top: -80px;
+    left: -10px;
 }
