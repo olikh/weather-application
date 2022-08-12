@@ -7,14 +7,13 @@ body {
 h1 {
     font-weight: 500;
     margin-top: 0.1em;
-    color: rgb(0, 0, 0);
     position: relative;
     top: 55px;
     left: 5px;
 }
 form {
     display: block;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 form.example input[type="search"] {
     background: #f9f7fe;
@@ -94,7 +93,7 @@ small {
 .weather-grids h2 {
     font-size: 4em;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: #0095DA;
     position: relative;
     top: -40px;
     left: 95px;
@@ -102,7 +101,7 @@ small {
 .units {
     font-size: 2em;
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: #0095DA;
     position: relative;
     top: -120px;
     left: 165px;
