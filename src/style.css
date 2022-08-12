@@ -158,3 +158,10 @@ small {
     top: -70px;
     left: -10px;
 }
+.weather-date {
+    font-size: 16px;
+    opacity: 0.6;
+}
+.weather-temperature {
+    font-size: 13px;
+}
